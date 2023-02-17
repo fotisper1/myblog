@@ -4,7 +4,7 @@ import { authenticateToken } from '../middleware/auth-middleware.mjs';
 import { makeComment,deleteComment,likeComment,myComments,allCommentsByDate,allCommentsByLike } from '../model/comment-controller.mjs';
 
 const commentrouter=express.Router();
-//
+
 commentrouter.post('/makecomment/:userid/:postid',authenticateToken,CommentValidator,makeComment)
 
 commentrouter.delete('/deletecomment/:commentid/:userid',authenticateToken,deleteComment)
