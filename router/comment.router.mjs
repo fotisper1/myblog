@@ -1,6 +1,6 @@
 import express from 'express'
 import CommentValidator from '../middleware/comment-validation.mjs';
-import { authenticateToken } from '../middleware/auth-middleware.mjs';
+import { authenticateToken } from '../middleware/authmidlleware/auth-middleware.mjs';
 import { makeComment,deleteComment,likeComment,myComments,allCommentsByDate,allCommentsByLike } from '../model/comment-controller.mjs';
 
 const commentrouter=express.Router();
