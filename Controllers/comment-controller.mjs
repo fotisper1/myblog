@@ -1,4 +1,4 @@
-import {User,Post,Comments} from './db.mjs'
+import {User,Post,Comments} from '../model/db.mjs'
 import mongoose, { model } from "mongoose";
 import { notice } from './user-controller.mjs';
 //Test. Dimiourgei ena sxolio kai to isagei ston pinaka comments, me dedomena to sxolio.to id tou user kai to id tou post

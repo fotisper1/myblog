@@ -1,7 +1,7 @@
 import express from 'express'
 import { PostValidator } from '../middleware/post-validation.mjs';
 import dotenv from "dotenv"
-import { lastPosts,makePost,deletePost,likePost,printMyPosts,postsByCategory } from '../model/post-controller.mjs';
+import { lastPosts,makePost,deletePost,likePost,printMyPosts,postsByCategory } from '../Controllers/post-controller.mjs';
 import { authenticateToken } from '../middleware/auth-middleware.mjs';
 dotenv.config()
 

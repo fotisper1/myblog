@@ -1,6 +1,6 @@
 import express from "express";
 import { authenticateToken } from "../middleware/authmidlleware/auth-middleware.mjs";
-import { addUser,changeProfil,loginUser } from "../model/user-controller.mjs";
+import { addUser,changeProfil,loginUser } from "../Controllers/user-controller.mjs";
 import { RegisterValidator } from "../middleware/ValidatorMiddleware/user-validation.mjs";
 
 const userrouter= express.Router();

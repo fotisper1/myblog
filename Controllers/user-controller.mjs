@@ -1,8 +1,8 @@
-import {User,Post,Comments} from './db.mjs'
+import {User,Post,Comments} from '../model/db.mjs'
 import mongoose, { model } from "mongoose";
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
-import { sendEmail } from './emailsender.mjs'
+import { sendEmail } from '../model/emailsender.mjs'
 //Test.Kanei eggrafi o user me dedomena to to username,to password, to email kai epistrefei to id tou user.Akomi eisagei ton xristi ston pinaka user
 export const addUser= async (req,res)=>{
     let username=req.body.onoma

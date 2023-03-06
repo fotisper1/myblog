@@ -1,4 +1,4 @@
-import {User,Post,Comments} from './db.mjs'
+import {User,Post,Comments} from '../model/db.mjs'
 import mongoose, { model } from "mongoose";
 //Test. Dimourgei ena post kai to isagei sto collection Post, eno dexetai os dedomena to title, to keimeno tou post kai ton xristi pou to kanei
 export const makePost= async (req,res)=>{
